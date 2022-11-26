@@ -1,14 +1,17 @@
 <template>
+  <!-- Metemos el MenuRutas en el template para poder ser visualizado -->
   <MenuRutas/>
   <router-view></router-view>
 </template>
 
 <script>
+//Importamos el componente de MenuRutas
 import MenuRutas from './components/MenuRutas.vue'
 
 export default {
   name: 'App',
   components: {
+    //Añadimos dicho componente
     MenuRutas
   }
 }
